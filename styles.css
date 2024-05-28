@@ -1,3 +1,4 @@
+/* Base styles for desktop */
 body {
     display: flex;
     margin: 0;
@@ -7,9 +8,9 @@ body {
 }
 
 .sidebar {
-    width: 30vw; /* Changed to relative width */
+    width: 30vw; /* Relative width for flexibility */
     background-color: #111111;
-    padding: 2rem; /* Changed to relative padding */
+    padding: 2rem; /* Relative padding */
     box-sizing: border-box;
 }
 
@@ -18,8 +19,8 @@ body {
 }
 
 .profile-image {
-    width: 6rem; /* Changed to relative width */
-    height: 6rem; /* Changed to relative height */
+    width: 6rem; /* Relative width */
+    height: 6rem; /* Relative height */
     overflow: hidden;
     border-radius: 50%;
     margin: 0 auto;
@@ -37,78 +38,68 @@ body {
 }
 
 .sidebar nav ul li {
-    margin: 0.9rem 0; /* Changed to relative margin */
+    margin: 0.9rem 0; /* Relative margin */
 }
 
 .sidebar nav ul li a {
     color: rgb(230, 230, 230);
     text-decoration: none;
-    font-size: 1.05rem; /* Changed to relative font size */
+    font-size: 1.05rem; /* Relative font size */
 }
 
 .main-content {
     flex-grow: 1;
-    padding: 2.5rem; /* Changed to relative padding */
+    padding: 2.5rem; /* Relative padding */
     box-sizing: border-box;
 }
 
 .main-content section {
-    margin-bottom: 3rem; /* Changed to relative margin */
+    margin-bottom: 3rem; /* Relative margin */
 }
 
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem; /* Changed to relative gap */
+    gap: 1rem; /* Relative gap */
 }
 
 .project-tile {
     background-color: #1a1a1a;
-    padding: 1.2rem; /* Changed to relative padding */
-    border-radius: 0.8rem; /* Changed to relative border radius */
+    padding: 1.2rem; /* Relative padding */
+    border-radius: 0.8rem; /* Relative border radius */
     position: relative;
-    border: 0.2rem solid rgb(33,33,33); /* Changed to relative border width */
+    border: 0.2rem solid rgb(33,33,33); /* Relative border width */
 }
-
-
-
-
-
 
 .project-image {
     width: 100%;
-    height: auto; /* Changed to relative height */
+    height: 200px; /* Fixed height */
     overflow: hidden;
-    margin-bottom: 1rem; /* Changed to relative margin */
+    margin-bottom: 1rem; /* Relative margin */
 }
-
-
-
-
-
 
 .project-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    border-radius: 0.5rem; /* Changed to relative border radius */
-    border: 0.1rem solid rgb(50,50,50); /* Changed to relative border width */
+    object-fit: cover; /* Ensures the image covers the area while maintaining aspect ratio */
+    border-radius: 0.5rem; /* Relative border radius */
+    border: 0.1rem solid rgb(50,50,50); /* Relative border width */
 }
 
 .project-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem; /* Changed to relative gap */
-    margin-bottom: 1rem; /* Changed to relative margin */
+    gap: 0.5rem; /* Relative gap */
+    margin-bottom: 1rem; /* Relative margin */
 }
 
 .project-tag {
     background-color: #1a1a1a;
-    padding: 0.4rem 0.8rem; /* Changed to relative padding */
-    border-radius: 0.5rem; /* Changed to relative border radius */
+    padding: 0.4rem 0.8rem; /* Relative padding */
+    border-radius: 0.5rem; /* Relative border radius */
     color: rgb(100,100,100);
-    font-size: 0.85rem; /* Changed to relative font size */
-    border: 0.15rem solid rgb(50,50,50); /* Changed to relative border width */
+    font-size: 0.85rem; /* Relative font size */
+    border: 0.15rem solid rgb(50,50,50); /* Relative border width */
 }
 
 .project-tile h3 {
@@ -128,4 +119,33 @@ body {
 .link {
     text-decoration: underline;
     color: #183fb3;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .main-content {
+        padding: 1rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-tile {
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border: 0.1rem solid rgb(33,33,33);
+    }
+
+    .project-tag {
+        padding: 0.3rem 0.6rem;
+        border-radius: 0.4rem;
+        font-size: 0.75rem;
+        border: 0.1rem solid rgb(50,50,50);
+    }
 }
