@@ -6,28 +6,24 @@ body {
     color: rgb(230, 230, 230);
 }
 
-
 .sidebar {
-    width: 800px; /* Increased width */
+    width: 30vw; /* Changed to relative width */
     background-color: #111111;
-    padding: 20px;
+    padding: 2rem; /* Changed to relative padding */
     box-sizing: border-box;
 }
-
 
 .sidebar .profile {
     text-align: center;
 }
 
-
 .profile-image {
-    width: 100px;
-    height: 100px;
+    width: 6rem; /* Changed to relative width */
+    height: 6rem; /* Changed to relative height */
     overflow: hidden;
     border-radius: 50%;
     margin: 0 auto;
 }
-
 
 .profile-image img {
     width: 100%;
@@ -35,104 +31,99 @@ body {
     transform: translateY(-16%);
 }
 
-
 .sidebar nav ul {
     list-style-type: none;
     padding: 0;
 }
 
-
 .sidebar nav ul li {
-    margin: 20px 0;
+    margin: 0.9rem 0; /* Changed to relative margin */
 }
-
 
 .sidebar nav ul li a {
     color: rgb(230, 230, 230);
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.05rem; /* Changed to relative font size */
 }
-
 
 .main-content {
     flex-grow: 1;
-    padding: 20px;
+    padding: 2.5rem; /* Changed to relative padding */
     box-sizing: border-box;
 }
 
-
 .main-content section {
-    margin-bottom: 40px;
+    margin-bottom: 3rem; /* Changed to relative margin */
 }
-
 
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 1rem; /* Changed to relative gap */
 }
-
 
 .project-tile {
     background-color: #1a1a1a;
-    padding: 20px;
-    border-radius: 8px;
+    padding: 1.2rem; /* Changed to relative padding */
+    border-radius: 0.8rem; /* Changed to relative border radius */
     position: relative;
-    border: 2px solid rgb(33,33,33);
+    border: 0.2rem solid rgb(33,33,33); /* Changed to relative border width */
 }
+
+
+
+
 
 
 .project-image {
-    width: 100%;
-    height: 250px; /* Fixed height for consistency */
+    width: 41.2rem;
+    height: 30vh; /* Changed to relative height */
     overflow: hidden;
-    margin-bottom: 10px;
+    margin-bottom: 1rem; /* Changed to relative margin */
 }
+
+
+
+
 
 
 .project-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the image covers the area */
-    border-radius: 5px;
-    border: 1px solid rgb(50,50,50);
+    object-fit: cover;
+    border-radius: 0.5rem; /* Changed to relative border radius */
+    border: 0.1rem solid rgb(50,50,50); /* Changed to relative border width */
 }
-
 
 .project-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 10px;
+    gap: 0.5rem; /* Changed to relative gap */
+    margin-bottom: 1rem; /* Changed to relative margin */
 }
-
 
 .project-tag {
     background-color: #1a1a1a;
-    padding: 5px 10px;
-    border-radius: 5px;
+    padding: 0.4rem 0.8rem; /* Changed to relative padding */
+    border-radius: 0.5rem; /* Changed to relative border radius */
     color: rgb(100,100,100);
-    font-size: 12px;
-    border: 1.5px solid rgb(50,50,50);
+    font-size: 0.85rem; /* Changed to relative font size */
+    border: 0.15rem solid rgb(50,50,50); /* Changed to relative border width */
 }
-
 
 .project-tile h3 {
     margin-top: 0;
 }
-
 
 .project-tile h3 a {
     color: rgb(214, 214, 214);
     text-decoration: none;
 }
 
-
 .project-tile a {
     color: #1abc9c;
     text-decoration: none;
 }
-
 
 .link {
     text-decoration: underline;
