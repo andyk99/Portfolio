@@ -6,16 +6,19 @@ body {
     color: rgb(230, 230, 230);
 }
 
+
 .sidebar {
-    width: 1750px !important; /* Use !important to ensure it overrides other styles */
+    width: 1760px; /* Increased width */
     background-color: #111111;
     padding: 20px;
     box-sizing: border-box;
 }
 
+
 .sidebar .profile {
     text-align: center;
 }
+
 
 .profile-image {
     width: 100px;
@@ -25,46 +28,43 @@ body {
     margin: 0 auto;
 }
 
+
 .profile-image img {
     width: 100%;
     height: auto;
     transform: translateY(-16%);
 }
 
+
 .sidebar nav ul {
     list-style-type: none;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
 }
 
+
 .sidebar nav ul li {
-    margin: 10px 0; /* Smaller margin for mobile */
-    width: 100%;
+    margin: 20px 0;
 }
+
 
 .sidebar nav ul li a {
     color: rgb(230, 230, 230);
     text-decoration: none;
     font-size: 18px;
-    text-align: center;
-    display: block;
-    width: 100%;
 }
+
 
 .main-content {
     flex-grow: 1;
     padding: 20px;
     box-sizing: border-box;
-    max-width: calc(100% - 320px); /* Adjust the max-width to account for sidebar width + padding */
-    margin-left: 0; /* Remove auto centering to align content with sidebar */
 }
+
 
 .main-content section {
     margin-bottom: 40px;
 }
+
 
 .projects-grid {
     display: grid;
@@ -72,13 +72,15 @@ body {
     gap: 20px;
 }
 
+
 .project-tile {
     background-color: #1a1a1a;
     padding: 20px;
     border-radius: 8px;
     position: relative;
-    border: 2px solid rgb(33, 33, 33);
+    border: 2px solid rgb(33,33,33);
 }
+
 
 .project-image {
     width: 100%;
@@ -87,13 +89,15 @@ body {
     margin-bottom: 10px;
 }
 
+
 .project-image img {
     width: 100%;
     height: 100%;
     object-fit: cover; /* Ensures the image covers the area */
     border-radius: 5px;
-    border: 1px solid rgb(50, 50, 50);
+    border: 1px solid rgb(50,50,50);
 }
+
 
 .project-tags {
     display: flex;
@@ -102,47 +106,35 @@ body {
     margin-bottom: 10px;
 }
 
+
 .project-tag {
     background-color: #1a1a1a;
     padding: 5px 10px;
     border-radius: 5px;
-    color: rgb(100, 100, 100);
+    color: rgb(100,100,100);
     font-size: 12px;
-    border: 1.5px solid rgb(50, 50, 50);
+    border: 1.5px solid rgb(50,50,50);
 }
+
 
 .project-tile h3 {
     margin-top: 0;
 }
+
 
 .project-tile h3 a {
     color: rgb(214, 214, 214);
     text-decoration: none;
 }
 
+
 .project-tile a {
     color: #1abc9c;
     text-decoration: none;
 }
 
+
 .link {
     text-decoration: underline;
     color: #183fb3;
-}
-
-/* Media Queries for Responsive Design */
-@media (min-width: 768px) {
-    body {
-        flex-direction: row;
-    }
-    .sidebar {
-        width: 300px !important; /* Use !important to ensure it overrides other styles */
-    }
-    .main-content {
-        max-width: calc(100% - 320px); /* Adjust the max-width to account for sidebar width + padding */
-        margin-left: 0; /* Align content with sidebar */
-    }
-    .projects-grid {
-        grid-template-columns: repeat(2, 1fr); /* Two columns for larger screens */
-    }
 }
